@@ -36,6 +36,5 @@ WORKDIR /var/www
 
 RUN npm config set registry https://registry.npm.taobao.org/ && npm install pm2 -g
 
-RUN ldconfig
 
 ENTRYPOINT ["/bin/bash", "/start.sh"]
