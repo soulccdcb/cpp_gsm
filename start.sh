@@ -17,6 +17,7 @@ __start_pm2() {
 }
 
 __start_cpp() {
+  ldconfig
   sleep 1m
   cd /var/www/Forever/bin
   pm2 start ./forever >/dev/null 2>&1 &
